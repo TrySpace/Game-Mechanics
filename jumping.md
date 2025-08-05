@@ -13,10 +13,10 @@ The jump detection area extends beyond the exact edge, creating a tolerance zone
 Sloped edges (greater than 90° downward) provide additional timing leniency for late jumps.
 
 ## Beyond the tolerance zone
-Once past the tolerance zone, the jump becomes less powerful; the player jumps less far depending on the type of edge. A sharp edge will be least forgiving, whereas a sloped edge is more forgiving
+Past the tolerance zone, jump power decreases based on edge type. Sharp edges are least forgiving, sloped edges more forgiving.
 
 ### Vertical tolerance
 If the jumper is still close enough to a vertical surface down from the edge, a jump may still be possible, depending on the material. The jump trajectory will however be a combination of the players momentum and the avarage surface angle of the jumping contact point.
 
 ## Multiple jumps
-There is not limit to the amount of separate jump attempts a player can make after an initial jump; i.e. first contact-loss of last stable ground.
+There is no limit to jump initiations after leaving the last stable ground.
