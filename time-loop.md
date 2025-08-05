@@ -38,11 +38,10 @@ Players might purposefully create endless loops to exploit game mechanics or avo
 - Possibly auto-resolve loop issues by autopathing the player to Y when not resolved 100% at the end of re-do event.
 
 ### Performance Considerations
-Storing time bubble states and tracking resolution paths can become memory-intensive.
+Storing time bubble states can become memory-intensive for bubbles with high activity levels, as each action and state change within the bubble would be preserved for back-reference.
 
 **Solution**:
-- Limit the number of active time bubbles
 - Implement state compression for older bubble states
 - Use "checkpoint" systems where only key decision points are preserved
-- Consider a "bubble decay" system where very old bubble states are simplified
+- Only the latest valid canonical loop is rendered in-game
 
