@@ -31,7 +31,8 @@ The main goal is to generate a precalculated simulation where no-one has to pain
 The city might be manually designed by people, or dynamically/AI generated, but instead of assigning thousands, to even millions of NPCs, the designer/AI would assign certain spaces as workplaces and others as homes, and others as public spaces like restaurants, cafes, etc. The simulation generator would then determine a logical, sensible and realistic distribution of jobs, job types and which people would work where. The designated areas would be dynamically generated but can also be manually assigned by the designers and tweaked for finetuning.
 Specific pathing will not be generated, since only large scale pathing is relevant. A path from home to work will be simplified to the connecting road, and is assumed to be accessible.
 When a path becomes inacessible all relevant pathings intersecting with the path will be recalculated, and these calculations will be executed in order of proximity as to not overload the main thread. So it will prioritize the local simulations visible impact first.
-
+## Interior Spaces
+Homes, apartments and offices would not all be specifically designed, but certain prefabs prototypes are made of which variations can be generated. It will however be pre-generated so nothing is generated on the spot and every interior will always be consistent and pure to the paramenters they are given. Most homes would be generated together with the NPC personality type, background and current job/income level in mind.
 
 ## Entities
 Several types of tracked entities
